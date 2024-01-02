@@ -22,9 +22,8 @@ function testing() {
         let r2 = a + c;
         return r2;
     }
-    testing2();
+
     return testing2();
 }
-
 let output = testing();
 document.write(output);

@@ -6,15 +6,17 @@ If the number is less than 1 or greater than 7, the function should return null.
 Note: Store the days of the week in the array.
 */
 
-
 function returnDay(number) {
-  const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
   if (number >= 1 && number <= 7) {
-    return daysOfWeek[number - 1];
+    return days[number-1];
   } else {
     return null;
   }
 }
 
-console.log(returnDay(5));
+let number = +prompt();
+let result = returnDay(number);
+document.write(result);

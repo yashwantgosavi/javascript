@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const students = ['yash', "jyoti", 'aditi', 'rohit'];
+        //for.. in loop
+        for (let i in students) {
+            console.log(`Roll No ${Number(i) + 1}: ${students[i]}`)
+        };
+
+        // for ... of loop
+        for (let student of students) {
+            console.log(student);
+        }
+
+
+        // ======== BREAK VS CONTINUE
+        const evenNumbers = [];
+        for (let i of inputs) {
+            if (i % 2 !== 0) {
+                continue;
+            }
+            evenNumbers.push(i);
+            if (evenNumbers.length === 5) {
+                break;
+            }
+
+            console.log(i);
+        }
+        console.log(evenNumbers);
+
+
+        // Rest VS Spread operator
+        
+
+
+    </script>
+
+</body>
+
+</html>
