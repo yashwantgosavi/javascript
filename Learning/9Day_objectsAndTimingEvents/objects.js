@@ -58,7 +58,7 @@ var obj = {
 "3":40
 }
 obj; 
-
+ing
 if we want to add some value on some position we can do this
     obj[2]="add text on 2nth postion";
 
