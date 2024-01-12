@@ -8,72 +8,44 @@
 </head>
 
 <body>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: red;
 
-    <p class="ab" id="ad"></p>
-    <button onclick="submitNow()">submit Now</button>
-
-    <script>
-        function submitNow() {
-            let a= document.getElementsByTagName("button").style.backgroundColor = "red"
-            return a;
         }
-        submitNow();
+
+        div:hover {
+            cursor: pointer;
+        }
+    </style>
+
+
+    <div></div>
+    <h1>box is clicked <span id="counter"></span></h1>
+    <script>
+
+        let div = document.getElementsByTagName('div');
+        let box = div[0];
+        let i = 0;
+
+        let idCounter = document.getElementById('counter');
+        idCounter.innerText = i;
+
+        box.addEventListener('click', function () {
+            i++;
+            idCounter.innerText = i;
+
+
+        });
+
+
+
 
     </script>
 
 
-
-
-
-
-
-
-
-    <!-- <script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document
-document.getElementById();
-document.getElementsByClassName();
-document.getElementsByName;
-document.getElementsByTagName;
-document.querySelector;
-document.querySelectorAll;
-
-
-
-
-
-    // window 
-    document.getElementById("demo").innerHTML = "height is" + window.innerHeight;
-    document.getElementById("width").innerHTML = "width is" + window.innerWidth;
-
-    // style
-    document.getElementById("c").style.color = "red";
-
-</script> -->
-
-<script src=""></script>
 </body>
 
 </html>

@@ -57,5 +57,5 @@ let userInput = +prompt();
 let stundentOutput = arrayCheck(userInput);
 
 
-document.write(stundentOutput +'<br>'+  );
+document.write(stundentOutput +'<br>');
 

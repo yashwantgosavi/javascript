@@ -62,4 +62,7 @@ ing
 if we want to add some value on some position we can do this
     obj[2]="add text on 2nth postion";
 
+
+
+** Anonymous function
 */
