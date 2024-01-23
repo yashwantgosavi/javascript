@@ -8,6 +8,16 @@
 </head>
 
 <body>
+
+    <form action="anupam.php" id="loginForm">
+        <input type="email" name="ab" id="" placeholder="First name">
+        <input type="password" placeholder="last name">
+        <input type="button" value="Submit">
+    </form>
+    <br>
+    <input type="button" value="check" id="check" onclick="a()">
+    <p id="output"></p>
+
     <script>
         /*
         .action;
@@ -17,9 +27,34 @@
         .elements.namedItem().value;
         .reset();
         .submit()
-
-
         */
+
+        let form = document.getElementById('loginForm');
+        let check = document.getElementById('check');
+        let output = document.getElementById('output');
+
+        function a() {
+            console.log("testing");
+            let x = form.submit();
+            // output.innerHTML = x;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
 
