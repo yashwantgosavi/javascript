@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        let a = "global Scope";
+        function test() {
+            let b = "in local Scope";
+            function test2() {
+                let c = "in a functional Scope";
+            }
+            let z = test2();
+            return z;
+        }
+        let result = test();
+
+        console.log(result);
+    </script>
+</body>
+
+</html>
