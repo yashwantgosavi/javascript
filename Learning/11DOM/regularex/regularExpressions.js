@@ -24,20 +24,11 @@ function contentSearching() {
     let text = searchInput.value;
     
     
-    if (filter.test(text) == filter.test(text)) {
+    if (filter.test(text)) {
         resultParagraph.textContent = "Alert: " + text;
 
     } 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     else {
         resultParagraph.textContent = "No match found.";
     }
