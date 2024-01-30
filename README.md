@@ -9,25 +9,26 @@ HTTPFRequest
 <!--
 
 Events
-Scroll
-OOPS
-Timeout + Intervals 
+Timeout + Intervals
+arrow function
 
 -->
 
 
 <!-- 
+
 Rest VS Spread operator
 for each 
-arrow function
 this
 Pass by value vs Pass by Refernces
-Deap copy vs shallow copy -->
+Deap copy vs shallow copy
+
+-->
 
 
 <!-- Closures + Currying -->
 <!-- Prototypal Inheritance -->
-<!-- Classes Creation -->
+<!-- Classes Creation + OOPS -->
 <!-- Iterators + Generators -->
 <!-- Promises + Try Catch -->
 <!-- Async + Await -->

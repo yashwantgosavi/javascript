@@ -22,9 +22,5 @@ btn.addEventListener('click', function(){
 
         // event.keyCode
 
-
-// ** Propagation of events **
-        // event.stopPropagation
-
 // Strict Mode
 
