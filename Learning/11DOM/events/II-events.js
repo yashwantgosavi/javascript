@@ -6,11 +6,11 @@ btn.addEventListener('click', function(){
 })
 
 // onclick
-// mouseover
-// mouseout
 // keypress
 // keydown
-// scroll
+// scroll : scrollY, scrollX
+// mouseover
+// mouseout
 // mouseenter
 // mousedown
 // mouseleave
@@ -23,4 +23,3 @@ btn.addEventListener('click', function(){
         // event.keyCode
 
 // Strict Mode
-

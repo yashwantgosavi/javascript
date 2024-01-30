@@ -1,14 +1,11 @@
-let value = 5;
-console.log("hello Ninjas");
-function incre() {
-    console.log(value);
-    value--;
-    if (value == 0) {
-        clearInterval(output);
+var count = 10;
+function timer() {
+    if (count == 0) {
+        console.log("Time up !!");
+        clearInterval(id);
+        return;
     }
-
-
-
+    console.log(count);
+    count--;
 }
-
-let output = setInterval(incre, 1000);
+var id = setInterval(timer, 1000);
