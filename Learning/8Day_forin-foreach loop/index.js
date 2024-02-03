@@ -1,5 +1,4 @@
 // arrow Function
-// rest
 
 
 divide = (a) => {

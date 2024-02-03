@@ -1,21 +1,6 @@
-
-
 <!-- 
-# Math
-# regExp
 HTTPFRequest
--->
 
-<!--
-
-Events
-Timeout + Intervals
-arrow function
-
--->
-
-
-<!-- 
 
 Rest VS Spread operator
 for each 
@@ -32,4 +17,3 @@ Deap copy vs shallow copy
 <!-- Iterators + Generators -->
 <!-- Promises + Try Catch -->
 <!-- Async + Await -->
-
