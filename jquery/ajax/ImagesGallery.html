@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <button id="btn">Click Me</button>
+    <div id="images">
+        <img id="dogImg" src="" alt="">
+    </div>
+
+    <script>
+        function a() {
+            //     $.ajax({
+            //         url: 'https://dog.ceo/api/breeds/image/random',
+            //         method: 'GET',
+            //         success: function (data) {
+            //             {
+            //                 var imageUrl = data.message;
+            //                 $('#dogImg').attr('src', imageUrl);
+            //             }
+            //         }
+            //     });
+            // }
+
+            // $('#btn').click(a);
+            
+            // $.get('https://dog.ceo/api/breeds/image/random', function (data) {
+            //     var imageUrl = data.message;
+            //     $('#dogImg').attr('src', imageUrl);
+            // }).fail(function (xhr, textStatus, errorThrow) {
+            //     console.log('error');
+            // })
+        }
+
+        $('#btn').click(a);
+    </script>
+
+
+</body>
+
+</html>
