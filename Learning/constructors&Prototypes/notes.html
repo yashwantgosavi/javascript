@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructors and Prototype</title>
+</head>
+
+<body>
+
+
+    <script>
+        // Constructors 
+        // function createStudent(name, rollNo, marks) {
+        //     this.name = name;
+        //     this.rollNo = rollNo;
+        //     this.marks = marks;
+        // }
+
+        // var student1 = new createStudent("yashwant", 15, 78);
+
+        // var student2 = new createStudent("abc", 45, 100);
+
+
+        function Vehicle(numWheels, price) {
+            this.numWheels = numWheels;
+            this.price = price;
+            this.getPrice = function () {
+                return this.price;
+            }
+        }
+        var vehicle1 = new Vehicle(2, 50000);
+        var vehicle2 = new Vehicle(4, 500000);
+
+        // A JS object is an entity having state and behavior(properties and method).
+
+        // js objects have speacial property called prototype
+        // we can set prototype using __proto__
+
+        // prototype
+
+        Vehicle.prototype.getPrice = function () {
+            return this.price;
+        };
+
+        // __proto__  (dunderproto) deprecate
+        // Object.getPrototypeOf(vehicle1)
+        // Vehicle.prototype.isPrototypeOf(vehicle1);
+        // vehicle1.hasOwnProperty('getPrice');
+        // Vehicle.prototype.color=""
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+
+</html>
