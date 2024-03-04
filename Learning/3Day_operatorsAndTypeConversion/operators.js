@@ -10,7 +10,13 @@
             %  modulo (remainder)
             ** Exponents (power of)
             ++ Increment
+                post
+                pre
             -- Decrement
+                post
+                pre
+
+
 
     2. Assignment
         (=, +=, -=, *=, /=, %=, **=)
@@ -26,7 +32,9 @@
 
     3. Comparison
         (<, >, <=, >=, ==, !=, ===, !==)
-        console.log(5 == '5');
+  
+
+        
 
     4. Logical 
         (&&, ||, !)
