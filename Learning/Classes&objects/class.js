@@ -49,9 +49,21 @@ class Parent{
     hello(){
         console.log("hello");
     }
+ constructor(){
+        super();
+testing 2
+
+    }
+
 }
 
 class Child extends Parent{
+
+    constructor(){
+    
+testing 1
+    super();
+    }
     work(){
         console.log("solve problems, Build Software");
     }
@@ -59,3 +71,20 @@ class Child extends Parent{
 
 
 */
+
+
+
+console.log('test1');
+
+try {
+    let a = 10;
+    let b = 20;
+    let result = a + b;
+    console.log(c);
+} catch (err) {
+    console.log(err);
+}
+
+
+console.log('test2');
+

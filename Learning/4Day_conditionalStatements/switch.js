@@ -1,4 +1,5 @@
 switch (key) {
+    case apple:
     case value:
         
         break;
