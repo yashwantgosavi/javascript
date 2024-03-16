@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            flex: 0 0 300px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .slider {
+            display: flex;
+            flex-direction: row;
+            column-gap: 30px;
+            transition: 0.5s all ease;
+        }
+
+        .sliderContainer {
+            width: 800px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Card Slider</h1>
+    <div class="sliderContainer">
+        <div class="slider">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+            <div class="card">Card 4</div>
+            <div class="card">Card 5</div>
+        </div>
+    </div>
+    <button onclick="p()">Pre</button>
+    <button onclick="n()">Next</button>
+
+    <script>
+        let currentIndex = 0;
+        let tCards = document.querySelector(".slider").children;
+        let tSlides = tCards.length;
+        let slideWidth = tCards[0].offsetWidth;
+
+        function n() {
+            if (currentIndex < tSlides - 1) {
+                currentIndex++;
+            }
+            slider();
+        }
+
+        function p() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            }
+            slider();
+        }
+
+        function slider() {
+            let newPosition = -slideWidth * currentIndex;
+            document.querySelector('.slider').style.transform = 'translateX(' + newPosition + 'px)';
+        }
+
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'ArrowLeft') {
+                p();
+            }
+            else if (event.key === 'ArrowRight') {
+                n();
+            }
+        });
+    </script>
+</body>
+
+</html>
