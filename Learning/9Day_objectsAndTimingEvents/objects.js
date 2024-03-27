@@ -28,11 +28,11 @@ var student={
   
   - if we want to know which keys are used in a object, we can write like this
       var keys = Object.keys(student); and
-     var keys = getOwnPropertyNames(student);
+     var keys = Object.getOwnPropertyNames(student);
 
 =================== Nested objects ==================
 var student = {
-"name": "yashwant",
+name: "yashwant",
 rollno:135,
 marks: 90,
 address:{
